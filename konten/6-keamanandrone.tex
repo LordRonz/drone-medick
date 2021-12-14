@@ -1,0 +1,114 @@
+\section{Keamanan dan Serangan pada Jaringan IoD}
+\label{sec:keamanandrone}
+
+Bagian ini membahas ancaman fisik yang mempengaruhi keamanan drone, yang merupakan entitas terpenting dari jaringan internet of drone (IoD). Masalah keselamatan ini secara signifikan mempengaruhi pencapaian misi yang ditargetkan. Selain itu juga dihadirkan model ancaman, model keamanan dan privasi, serta serangan pada jaringan IoD.
+
+\subsection{Isu Keamanan pada Internet of Drones}
+\label{subsec:isukeamanandrone}
+
+Terlepas dari masalah keamanan dan privasi jaringan IoD, drone, yang merupakan komponen utama jaringan IoD, rentan terhadap ancaman fisik yang memengaruhi keselamatan mereka, yang menghambat pencapaian misi. Ancaman fisik yang paling parah adalah pencurian dan perusakan. Karena drone dioperasikan di udara/perairan terbuka, mereka rentan terhadap pencurian, pembajakan fisik, dan penghancuran menggunakan senjata dan riak anti-drone \citep{euchi2021drones}. Maldrone, virus perangkat lunak, digunakan oleh peretas untuk menyabotase dan mengganggu komunikasi tautan data dan memaksa drone sipil untuk mendarat secara instant \citep{dahlman2019game}. 
+
+Skenario lain adalah menggunakan drone musuh untuk bertindak sebagai predator drone. Drone jahat ini dibangun dengan jaring ikan yang secara fisik menangkap drone target. Ancaman fisik drone paling berbahaya kedua adalah kondisi cuaca dan tantangan sipil. Kondisi cuaca yang buruk, termasuk suhu rendah atau tinggi, turbulensi, badai petir, dan hujan yang membekukan, dapat menyebabkan kecelakaan drone. Drone ukuran kecil lebih rentan terhadap ancaman ini dibandingkan dengan drone ukuran lebih besar. Elemen sipil yang mempengaruhi navigasi drone termasuk gedung tinggi, pohon besar, dan kabel listrik. Ancaman fisik ketiga untuk drone adalah tabrakan antara drone ramah yang sedang bergerak. Ini terjadi ketika drone berbeda yang tergabung dalam jaringan IoD yang sama secara tidak sengaja menyerang satu sama lain karena kesalahan mekanisme sense-and-avoid bawaan.
+
+Seperti yang dibahas di bagian ini, ukuran drone memiliki efek serius pada keamanannya. Drone yang lebih kecil lebih rentan terhadap ancaman keamanan dibandingkan dengan drone yang lebih besar. Ini karena drone yang lebih kecil tidak dapat mengakomodasi mekanisme keamanan yang efisien karena fitur kendala sumber dayanya. Oleh karena itu, penelitian masa depan diperlukan pada pengembangan mekanisme keamanan ringan yang cocok untuk drone yang lebih kecil.
+
+\subsection{Model ancaman pada jaringan Internet of Drones}
+\label{subsec:modelancaman}
+
+Model ancaman adalah prosedur di mana potensi kerentanan atau serangan diidentifikasi dan mitigasinya dapat ditentukan. Model menggambarkan sifat penyerang, vektor serangan, area jaringan yang mudah diserang, dan tindakan pengendalian yang harus diambil. Singkatnya, pemodelan ancaman adalah prosedur untuk menentukan semua potensi ancaman yang dapat membahayakan jaringan atau sistem [71]. Beberapa metode pemodelan ancaman telah dikembangkan selama bertahun-tahun. Namun, tidak semuanya cukup komprehensif untuk jaringan cyber-fisik yang kompleks seperti internet drone (IoD). Oleh karena itu, model ancaman untuk jaringan IoD harus lebih kuat dengan gambaran yang jelas tentang potensi ancaman. Ada banyak model ancaman yang digunakan pada jaringan IoD oleh berbagai peneliti. Model ancaman utama dan paling dapat diterima untuk jaringan IoD diberikan di bagian ini.
+
+Model ancaman Dolev Yao diusulkan oleh \citet{dolev1983security}. Model ini diterima secara luas untuk protokol kriptografi. Model ancaman CK diusulkan oleh \citet{canetti2002universally}. Model ancaman memiliki semua karakteristik model Dolev Yao. Selain itu, terlepas dari semua hak istimewa yang diberikan kepada musuh dalam model Dolev Yao, musuh model CK dapat mengkompromikan parameter rahasia termasuk kunci pribadi yang disimpan dalam memori entitas jaringan asli dengan menggunakan serangan analisis daya. Model ancaman pohon serangan menggunakan metodologi pohon serangan pada sistem dan jaringan fisik-cyber \citep{potteiger2016software}. Model ancaman pohon serangan pertama kali diusulkan oleh \citet{schneier1999attack}. Pohon serangan adalah ilustrasi diagram serangan dalam bentuk pohon. Akar pohon menandakan tujuan serangan, dan daun melambangkan cara untuk mencapai tujuan. Tujuan yang berbeda direpresentasikan dengan pohon terpisah yang menghasilkan model analisis ancaman yang melibatkan sekumpulan pohon. Pemodelan ancaman pohon serangan cukup mudah digunakan. Namun, ini membutuhkan pengetahuan yang luas tentang jaringan atau sistem yang sesuai dan masalah keamanannya.
+
+\subsection{Model keamanan dan privasi pada jaringan Internet of Drones}
+\label{subsec:modelkeamanan}
+
+Model keamanan dan privasi adalah desain arsitektur dan prosedur yang mewakili entitas jaringan dan hubungannya dalam membangun keamanan dan privasi. Model yang ditujukan untuk menetapkan persyaratan keamanan dan privasi jaringan atau sistem yang sedang dipertimbangkan. Banyak model keamanan dan privasi telah dipertimbangkan pada jaringan IoD oleh para peneliti.
+
+Model ini terdiri dari tiga entitas utama: Pusat otoritas tepercaya (TAC), drone terbang, dan stasiun kontrol darat (GCS) \citep{tian2019efficient} \citep{yahuza2020systematic} \citep{chen2020traceable}. TAC dipercaya sepenuhnya oleh semua entitas jaringan internet of drones (IoD). Ini mendaftarkan semua entitas IoD lainnya dan menghasilkan pasangan kunci mereka. Drone terbang adalah komponen kunci dari jaringan IoD yang terletak di berbagai zona terbangnya. Kontrol keseluruhan drone dilakukan oleh GCS. Setelah pendaftaran entitas jaringan dan pembuatan kunci oleh TAC berhasil, entitas terdaftar yang ingin berkomunikasi akan menghasilkan dan menyetujui kunci sesi bersama. Kunci sesi bersama akan digunakan untuk memastikan komunikasi yang aman dan autentik. 
+
+Model keamanan dan privasi berbasis blockchain yang khas untuk jaringan IoD terdiri dari tiga lapisan: Lapisan pengguna, lapisan infrastruktur, dan lapisan IoD \citep{bera2021private}. Di lapisan pengguna, interaksi antara dua pengguna dan interaksi antara pengguna dan drone ditentukan. Jumlah pengguna dan drone digabungkan untuk membuat cluster blockchain dengan drone sebagai pengontrol utama. Setiap cluster digunakan untuk mengontrol dan mengkoordinasikan perilaku drone. Blockchain memberikan keamanan dan privasi ke jaringan. Lapisan infrastruktur menentukan konektivitas dan kontrol pengguna dan drone melalui stasiun kontrol darat (atau stasiun pangkalan). Terakhir, lapisan IoD menentukan komunikasi antara pengguna dan drone untuk pertukaran data yang efisien dan aman menggunakan teknologi blockchain. Mereka berkomunikasi melalui internet dan informasi terbaru mereka disimpan di blockchain.
+
+Model keamanan dan privasi otentikasi pengguna yang khas untuk jaringan IoD terdiri dari drone terbang, server (ruang kontrol), dan pengguna \citep{wazid2018design}. Drone terbang mengirim data terus menerus ke server. Otentikasi jarak jauh antara drone terbang dan pengguna dibuat melalui server. Pengguna dan drone terbang berbagi kunci sesi yang sama dan memulai komunikasi setelah otentikasi bersama. Oleh karena itu, setiap pengguna di jaringan IoD dapat memperoleh informasi secara aman dari drone terbang.
+
+Dalam model keamanan dan privasi jenis ini, beberapa entitas jaringan IoD dengan fitur yang sama atau bahkan berbeda bergabung membentuk grup dalam melakukan otentikasi \citep{aydin2021group}. Ini secara signifikan mengurangi overhead komputasi dibandingkan dengan otentikasi individu. Manajer grup, dengan sumber daya yang lebih baik dibandingkan dengan semua anggota grup menghasilkan semua parameter yang diperlukan untuk proses otentikasi grup. Anggota grup dapat berupa stasiun kontrol darat (base station), perangkat komputasi tepi seluler (MEC), atau otoritas tepercaya.
+
+\subsection{Serangan pada jaringan Internet of Drones}
+\label{subsec:serangandrone}
+
+Klasifikasi serangan di internet drone (IoD) diberikan di bagian ini. Lokalisasi atau estimasi posisi adalah kebutuhan penting dari setiap sistem cyber-fisik seperti IoD \citep{abdelhafez2020localization}. Oleh karena itu, serangan yang menyebabkan kesalahan lokalisasi entitas IoD sangat merusak. Oleh karena itu, dalam pekerjaan tinjauan ini, semua serangan jaringan IoD diklasifikasikan hanya ke dalam dua kategori utama. Semua serangan yang menghalangi estimasi posisi aman drone dikategorikan dalam serangan kesalahan lokalisasi, dan serangan lainnya dikategorikan dalam serangan terhadap persyaratan keamanan dan privasi. Serangan terhadap persyaratan keamanan dan privasi disubkategorikan menjadi serangan terhadap integritas, ketersediaan, keaslian, kerahasiaan, dan privasi.
+
+\subsubsection{Privasi}
+\label{subsubsec:privasi}
+
+Privasi merupakan perhatian penting untuk keamanan berorientasi data di IoD. Data dikumpulkan 5 Internet Drone Choudhary dkk. dan diproses melalui IoD dan pemrosesan data meningkatkan kemungkinan ancaman dan kerentanan. Penyerang menargetkan IoD untuk mendapatkan informasi sensitif melalui berbagai pendekatan. Serangan berikut mempengaruhi privasi IoD.
+
+\paragraph{Analisis lalu lintas}
+\label{par:anallalulintas}
+
+Analisis lalu lintas dilakukan untuk memeriksa lalu lintas IoD untuk mendapatkan beberapa informasi yang berguna dari perangkat dan jaringan IoD. Lalu lintas berisi paket yang dibagikan antara IoD dan sistem kontrol tanah. Forensik paket dalam lalu lintas mengungkapkan informasi sensitif. Paket termasuk informasi seperti lokasi, IoD yang terhubung dengan sensor, dan menangkap data dari sensor
+
+\paragraph{Interception}
+\label{par:interception}
+
+Dalam intersepsi, penyusup melibatkan seseorang yang secara rutin memonitor jaringan lalu lintas. Sangat sulit untuk menemukan penyusup seperti itu yang secara pasif memantau jaringan. Dalam misi kritis, IoD berisi informasi sensitif; oleh karena itu pelacakan dan pemantauan dari IoD bisa berbahaya bagi lembaga yang bertanggung jawab untuk misi tersebut.
+
+\paragraph{Pengambilan data dan forensik}
+\label{par:forensik}
+
+Melalui analisis lalu lintas, sejumlah besar data dapat dikumpulkan dari IoD. Bahkan jika data terenkripsi tidak mengungkapkan informasi yang berguna, forensik data membantu untuk mendapatkan informasi sensitif dari data yang dikumpulkan. Dengan demikian, diinginkan untuk merumuskan solusi untuk mencegah pelanggaran informasi jika mekanisme berbasis forensik diterapkan untuk menyerang IoD.
+
+\subsubsection{Integrity}
+\label{subsubsec:integrity}
+
+Integritas mendefinisikan bahwa data dalam IoD harus konsisten, akurat, dan tepercaya. Itu transmisi tidak boleh diubah dalam komunikasi oleh pengguna atau penyerang yang tidak sah \citep{hartmann2013vulnerability}. Beberapa mekanisme yang umum digunakan untuk perlindungan integritas data adalah fungsi hash, checksum dll. Integritas IoD dipengaruhi oleh serangan berikut:
+
+\paragraph{Substitusi atau pengubahan
+informasi}
+\label{par:substitusi}
+
+Perubahan adalah konsep penambahan false atau informasi yang salah dalam komunikasi dan mengubah arti asli data. Berbagai bentuk perubahan meliputi modifikasi, fabrikasi, substitusi, dan injeksi data yang memodifikasi data yang digunakan dalam komunikasi IoD. Perubahan data sesat pengguna dengan informasi palsu.
+
+\paragraph{Modifikasi kontrol akses}
+\label{par:kontolakses}
+
+Kontrol akses adalah aturan dan kebijakan yang mengatur bagaimana perangkat lain di IoD berkomunikasi dan bagaimana pengguna mengakses data. Kontrol akses adalah pikiran dari tubuh yang memberikan instruksi kepada IoD. Jika penyerang memperoleh kontrol akses, maka penyerang dapat mengubah semua izin, hak istimewa, dan otorisasi, yang mungkin mengakibatkan kerugian yang besar.
+
+\paragraph{Serangan Man-in-the-Middle}
+\label{par:mitm}
+
+Serangan Man-in-the-Middle memungkinkan penyerang untuk  menangkap data pada komunikasi antara IoD dan sensor. Titik Akses Rogue digunakan untuk memiliki titik akses nirkabel dan menipu perangkat terdekat untuk bergabung dengan domainnya dalam komunikasi IoD. Melalui titik akses ini, lalu lintas jaringan dapat dimanipulasi oleh penyerang \citep{kamthan2017uavs}. Ada berbagai solusi untuk mencegah serangan Man-in-the-Middle, yang termasuk enkripsi Strong Wired Equivalent Privacy (WEP)/WiFi Protected Access (WAP) pada titik akses, Hyper Text Transfer Protocol Secure (HTTPS), dan berbasis Kunci Publik otentikasi. • Pemalsuan pesan: Di bawah serangan pemalsuan pesan di IoD, pesan permintaan login sesi sebelumnya melalui saluran publik/terbuka dipalsukan selama eksekusi protokol otentikasi. Setelah itu, penyerang dapat memodifikasi dan mengirim ulang pesan ke pengguna.
+
+\subsubsection{Confidentiality}
+\label{subsubsec:confidentiality}
+
+Kerahasiaan memastikan bahwa informasi tidak dapat bocor ke pengguna yang tidak sah. Banyak serangan terhadap IoD dan stasiun kontrol darat adalah akibat dari kekurangan dalam keamanan. Kerahasiaan dipengaruhi oleh akses pengguna yang tidak sah ke IoD dan itu mengambil informasi yang berguna.
+
+\paragraph{Identity spoofing}
+\label{par:identityspoofing}
+
+Dalam spoofing identitas, penyerang berhasil menyamar sebagai pengguna yang sah di jaringan IoD dengan ID spoofing dari pengguna yang sah dan mendapatkan akses ke jaringan IoD dan tautan komunikasi. ID terenkripsi atau ID semu yang dapat digunakan satu kali dapat menjadi solusi yang efisien terhadap pencegahan serangan tersebut.
+
+\paragraph{Akses tidak sah}
+\label{par:aksestidaksah}
+
+Akses tidak sah adalah ketika seseorang memperoleh akses ke server IoD dan layanan menggunakan akun orang lain atau metode lain seperti ID duplikat. Serangan ini mengarah pada risiko pengungkapan informasi penting yang tidak sah dari IoD.
+
+\subsubsection{Availability}
+\label{subsubsec:availability}
+
+Ketersediaan didefinisikan sebagai layanan yang dimulai segera saat dibutuhkan untuk mempertahankan fungsi yang benar. Ketersediaan informasi adalah untuk memastikan bahwa pengguna yang sah dapat untuk mengakses informasi berdasarkan kebutuhan mereka. IoD dioperasikan dalam orientasi misi bidang atau area, oleh karena itu, ketersediaan IoD menjadi perhatian utama dalam hal keamanan. Ketersediaan dapat dipengaruhi oleh faktor-faktor berikut.
+
+\paragraph{Serangan fisik}
+\label{par:seranganfisik}
+
+Jenis serangan ini dilakukan pada komponen perangkat keras. Ini serangan memiliki motivasi utama untuk menghancurkan perangkat. Perangkat IoD mahal; oleh karena itu perlindungan terhadap serangan fisik adalah masalah yang cukup besar.
+
+\paragraph{DoS dan DDoS}
+\label{par:ddos}
+
+DoS didefinisikan sebagai menolak aksesibilitas sumber daya atau mencegah pengguna yang sah mengakses layanan dari sumber daya yang ditunjuk. IoD membutuhkan saluran komunikasi untuk mengirim dan menerima data \citep{rodday2016exploring}. Jika penyerang melakukan permintaan banjir pada saluran ini, jaringan terputus, yang menyebabkan tidak tersedianya sumber daya.
+
+\paragraph{GPS spoofing}
+\label{par:gpsspoofing}
+
+GPS digunakan untuk menentukan posisi kendaraan dan memberikan titik arah ke terbang ke sasaran yang ditentukan. Penyerang dapat mengubah konten sinyal GPS yang diterima atau menghasilkan sinyal spoofing dengan bantuan generator sinyal GPS
