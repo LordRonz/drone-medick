@@ -1,10 +1,10 @@
 # Template LaTeX Paper IEEE
 
-[![latest version](https://img.shields.io/github/v/release/b201lab/template-paper-ieee)](https://github.com/b201lab/template-paper-ieee/releases/)
-[![commits since latest version](https://img.shields.io/github/commits-since/b201lab/template-paper-ieee/latest)](https://github.com/b201lab/template-paper-ieee/commits/master)
-[![repo size](https://img.shields.io/github/repo-size/b201lab/template-paper-ieee)](https://github.com/b201lab/template-paper-ieee)
-[![license](https://img.shields.io/github/license/b201lab/template-paper-ieee)](./LICENSE)
-[![build document status](https://img.shields.io/github/workflow/status/b201lab/template-paper-ieee/Build%20Document)](https://github.com/b201lab/template-paper-ieee/actions)
+[![latest version](https://img.shields.io/github/v/release/lordronz/drone-medick)](https://github.com/lordronz/drone-medick/releases/)
+[![commits since latest version](https://img.shields.io/github/commits-since/lordronz/drone-medick/latest)](https://github.com/lordronz/drone-medick/commits/master)
+[![repo size](https://img.shields.io/github/repo-size/lordronz/drone-medick)](https://github.com/lordronz/drone-medick)
+[![license](https://img.shields.io/github/license/lordronz/drone-medick)](./LICENSE)
+[![build document status](https://img.shields.io/github/workflow/status/lordronz/drone-medick/Build%20Document)](https://github.com/lordronz/drone-medick/actions)
 
 Repositori ini berisi template [LaTeX](https://www.latex-project.org/) dari paper untuk konferensi yang diselenggarakan oleh [Institute of Electrical and Electronics Engineers](https://www.ieee.org/) (IEEE).
 Template yang ada pada repositori ini menggunakan format resmi [IEEETran](http://www.michaelshell.org/tex/ieeetran/) versi 1.8b yang dikeluarkan oleh IEEE.
