@@ -1,0 +1,28 @@
+\section{Solusi Keamanan IoD}
+\label{sec:solusikeamanan}
+
+Drone adalah perangkat kendala sumber daya yang ditandai dengan daya komputasi yang rendah, kapasitas memori yang rendah, dan konsumsi energi yang rendah. Dengan demikian, teknik mitigasi tradisional untuk mengekang serangan yang berlaku untuk arsitektur pesawat serupa lainnya mungkin tidak diterapkan di internet drone (IoD). Teknik mitigasi serangan yang berlaku untuk IoD dan tindakan pencegahan lainnya akan dibahas di bagian ini.
+
+\subsection{Teknik Mitigasi untuk serangan integritas}
+\label{subsec:mitigasiintegritas}
+
+Untuk memitigasi serangan man-in-the-middle, eavesdropping, dan wormhole di internet drone (IoD), penulis dalam \citep{altawy2016security} telah menyarankan penggunaan protokol enkripsi kriptografi. Selanjutnya, penulis merekomendasikan penggunaan teknik deteksi intrusi yang kuat, aplikasi antivirus yang kuat dan andal, kebijakan yang ketat, dan firewall. Menurut penulis, analisis saluran samping harus digunakan untuk mendeteksi Trojan yang mematikan. Selain itu, prosedur logging yang digunakan untuk melacak urutan kejadian di jaringan IoD harus dirancang seperti yang dikatakan oleh penulis. Namun, penulis gagal menentukan mekanisme keamanan yang sesuai dengan jaringan IoD dengan kendala sumber daya. Selanjutnya, penulis dalam \citep{singh2020blockchain} memanfaatkan pemrosesan pesanan yang diaktifkan blockchain pada layanan pengiriman drone untuk memastikan integritas informasi yang dipertukarkan dalam platform layanan drone.
+
+\subsection{Teknik Mitigasi untuk serangan ketersediaan}
+\label{subsec:mitigasiketersediaan}
+
+\citet{garg2020acoustic} mengusulkan mekanisme pertahanan daya ringan dan rendah yang berlaku untuk drone kendala sumber daya untuk mengurangi serangan fisik di jaringan IoD. Mekanisme penginderaan akustik berbasis mikrofon yang disebut Droppler Dodge dikembangkan. Ini digunakan untuk mengidentifikasi objek terbang yang mendekat yang akan menabrak drone. Sinyal akustik ditransmisikan secara berpasangan dengan pergeseran frekuensi droppler dalam sinyal yang dipantulkan untuk memprediksi niat objek terbang. Untuk menawarkan solusi terhadap serangan fisik drone di jaringan IoD, penulis di \citep{ciarletta2016development} mengembangkan parasut pintar yang menyediakan solusi tabrakan yang aman untuk drone. Bahasa tindakan cyber-fisik (CPAL), model desain ringan untuk sistem tertanam digunakan dalam fase desain, simulasi, dan verifikasi. \citet{garg2020enabling} berpendapat bahwa drone komersial hanya dilengkapi dengan sensor jarak yang hanya mendeteksi objek statis besar dan mungkin tidak mendeteksi objek cepat dan dinamis yang diarahkan ke mereka. Oleh karena itu, untuk mengatasi masalah ini, penulis mengusulkan pasangan modul sensor dan aktuator onboard dengan algoritma inferensi footping kecil.
+
+\subsection{Teknik Mitigasi untuk serangan privasi}
+\label{subsec:mitigasiprivasi}
+
+Dalam skema yang diusulkan oleh penulis di \citep{pigatto2015sphere}, modul pemeriksaan kesehatan terpusat yang menjamin operasi drone yang lebih aman di IoD dalam mencoba mengurangi serangan analisis lalu lintas. Dalam teknik lain, penulis dalam \citep{ferrag2019deliverycoin}, mengusulkan kerangka kerja pengiriman drone berkemampuan blockchain. Fungsi hash dan tanda tangan kecil digunakan oleh skema untuk mencapai persyaratan pelestarian privasi.
+
+
+
+Dapat diamati dari bagian ini bahwa ada lebih banyak teknik mitigasi serangan keaslian dan ketersediaan dibandingkan dengan persyaratan keamanan dan privasi yang tersisa. Selain itu, sebagian besar teknik untuk mengekang serangan keaslian tidak cocok karena tingginya biaya komputasi dan komunikasi atau memberikan tingkat keamanan yang tidak memadai. Oleh karena itu, diperlukan teknik yang lebih efisien.
+
+\subsection{Teknik Mitigasi untuk serangan confidentiality}
+\label{subsec:mitigasiconfidentiality}
+
+\citet{dey2018security} mengusulkan mitigasi serangan spoofing pada persyaratan kerahasiaan di jaringan internet drone (IoD). Menurut mereka, penerima anti-spoofing dan anti-jamming banyak membantu dalam mengekang serangan terkait. Selanjutnya penulis menyarankan penggunaan teknik enkripsi dalam melindungi file library, dan penggunaan obfuscator dalam mencegah reverse engineering dan decompile firmware, dan menggunakan enkripsi pada seluruh library firmware dan menyimpan kunci enkripsi pada komponen hardware drone. untuk mengurangi serangan replay. Demikian pula, skema enkripsi berbasis identitas ringan yang disebut IBE-LITE diusulkan di \citep{lin2018security}. Protokol kriptografi standar enkripsi Elgamal dan Advance (AES) digunakan untuk mengenkripsi informasi navigasi pemohon. Skema ini cukup untuk memastikan transfer informasi yang aman di jaringan IoD, yang mengurangi serangan spoofing dan replay. Keunikan teknik ini adalah kemampuan untuk menggunakan string arbitrer untuk menghasilkan kunci publik, dan kemampuan untuk menghasilkan kunci publik dari kunci rahasia yang sesuai.
